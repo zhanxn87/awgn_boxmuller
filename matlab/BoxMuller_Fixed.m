@@ -1,6 +1,6 @@
 %***************************************************************************//
 %***************************************************************************//
-%  Copyright (c) 2018 CurvTech, www.curvtech.com
+%  Copyright (c) 2018 zhanxn87
 %  All rights reserved.
 %
 %  Permission is hereby granted, free of charge, to any person obtaining a 
@@ -75,7 +75,7 @@ w1=sqrt(-2*log(double(u0)/2^48)).*cos(double(u1)/2^16*pi*2); %~N(0,1)
 clear a b
 
 %% calc e = -2ln(u0)
-%%------------- Evaluate e = -2ln(u0) --------------
+%%------------- Evaluate e = -2ln(u0) ------------
 % Range Reduction
 exp_e = LeadingZeroDetect(u0, 48) + 1; %6bit
 x_e = bitshift(u0, exp_e);
@@ -113,7 +113,7 @@ e_fix(e_fix>2^31-1) = 2^31-1; %(0,31,24)
 
 clear exp_e x_e xm_e xl_e y_e ec yy d
 
-%% --------------- Evaluate f = sqrt (e) ------------
+%% --------------- Evaluate f = sqrt (e) -----------
 % Range Reduction
 Offset = 5;
 exp_f = Offset-LeadingZeroDetect(e_fix, 31); % Note: Offset=IBe-2;
@@ -149,7 +149,7 @@ f = floor(f*2^16)/2^16; %(0,20,16)
 disp(['e / f error max(compared to float):' num2str(max(abs(-2*log(double(u0)/2^48)-e))) ' ' num2str(max(abs(f-sqrt(e))))]);
 
 clear e_fix exp_f x_f f_idx f_idx2 xm_f xl_f y_f
-%% ------------ Evaluate g0=sin(2*pi*u1) ------------
+%% ------------ Evaluate g0=sin(2*pi*u1) -----------
 % %------------ g1=cos(2*pi*u1) ------------
 % Range Reduction
 MSB = 14;
@@ -203,7 +203,7 @@ clear x_g_a x_g_b xm_g_a xm_g_b xl_g_a xl_g_b y_g_a y_g_b quadrant
 %         g0 = -y_g_a; g1 = y_g_b; % [3*pi/2, 2*pi)
 % end
 
-%% --------------- Compute x0 and x1 ---------------
+%% --------------- Compute x0 and x1 --------------
 x0 = f.*g0; 
 x1 = f.*g1;
 

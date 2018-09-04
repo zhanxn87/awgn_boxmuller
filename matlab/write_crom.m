@@ -1,6 +1,6 @@
 %***************************************************************************//
 %***************************************************************************//
-%  Copyright (c) 2018 CurvTech, www.curvtech.com
+%  Copyright (c) 2018 zhanxn87
 %  All rights reserved.
 %
 %  Permission is hereby granted, free of charge, to any person obtaining a 
