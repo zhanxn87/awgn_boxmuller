@@ -31,9 +31,9 @@
 //    used on FPGA accurate to one unit in the last place up to 8.15 sigma.
 //
 //    The Box-Muller Algorithm fixed point model mainly refers to the paper:
-//    -D. U. Lee, J. D. Villasenor, W. Luk, and P. H. W. Leong, “A hardware
+//    -D. U. Lee, J. D. Villasenor, W. Luk, and P. H. W. Leong, "hardware
 //     Gaussian noise generator using the box-muller method and its error
-//     analysis,” IEEE Transactions on Computers, vol. 55, no. 6, pp. 659–671,
+//     analysis", IEEE Transactions on Computers, vol.55, no.6, pp.659.71,
 //     June 2006.
 //
 //    input ports:

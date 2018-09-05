@@ -1,0 +1,7 @@
+./tb.v
+../verilog/bm_cg_rom.v
+../verilog/boxmuller.v
+../verilog/bm_ce_rom.v
+../verilog/bm_cf_rom.v
+../verilog/math_bm.v
+../verilog/taus_urng.v

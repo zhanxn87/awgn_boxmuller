@@ -40,8 +40,8 @@
 function BoxMuller_Fixed(seed)
 % finxed point model for RTL bit-Match golden
 
-len  = 1e6;
-write_file = 0;
+len  = 1e5;
+write_file = 1;
 
 if nargin==0
     seed = 8628673799;
