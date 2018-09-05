@@ -14,13 +14,24 @@ accuracy analysis refer to the following paper:
 II. IP core features
 
   1.Synthesizable Verilog HDL design for FPGA/ASIC.
+  
   2.Bit accurate matlab fixed point model.
+  
   3.High precision performance accurate to one unit in the last place up to 8.15 sigma.
-  4.State-of-the-art simulation enviorement for Modelsim.
+  
+  4.State-of-the-art simulation environment for Modelsim.
 
 III. Performance Test
 
-  TBD
+  Resource Utilization
+  
+  1767 LUTs, 915 FFs, 8 DSP48, 2.5 BRAM36k. (On Xilinx Virtex Ultra-Scale FPGA)
+  
+  Fmax 320MHz to generate two Gaussian Distribution signals at the same time.
+  
+  Total delay of 16 cycles during the whole pipeline path.(from clock_enable signal to output_valid)
+  
+  Maximum accuracy error of the output signals compared to the float point model are both about 4.8e-4.
 
 IV. Use Guide
 
